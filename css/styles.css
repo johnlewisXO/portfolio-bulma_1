@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hero {
+	width: 100wh;
+	height: 13vh;
+	color: #000;
+	background: linear-gradient(-45deg, #B2FEFA, #0ED2F7, #B2FEFA );
+	background-size: 1000% 1000%;
+	-webkit-animation: Gradient 12s ease infinite;
+	-moz-animation: Gradient 12s ease infinite;
+	animation: Gradient 12s ease infinite;
+	text-align: center;
+}
+.hero-body {
+	background-image: url('img/binaryBG.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar {
+	top: 20px;
+}
+.navbar-brand {
+	font-size: 34px;
+	font-weight: bold;
+	height: 8vh;
+}
+
+.hero-body > div > h1 {
+	color: rgb(150, 220, 70);
+}
+
+
+body footer {
+	width: 100wh;
+	height: 10vh;
+	color: #000;
+	background: linear-gradient(-45deg, #B2FEFA, #0ED2F7, #B2FEFA  );
+	background-size: 50% 50%;
+	-webkit-animation: Gradient 12s ease infinite;
+	-moz-animation: Gradient 12s ease infinite;
+	animation: Gradient 12s ease infinite;
+	text-align: center;
+}
+
+.columns {
+	background: linear-gradient(-45deg, #B2FEFA, #0ED2F7, #B2FEFA  );
+	
+}
+
+.about, .traits, .education, .workexperience, .hobbies, .columns, .abilities {
+	margin: 0 25% 0 25%;
+}
+
+.navbar img {
+	max-width: 80px;
+	max-height: 60px;
+}
+/* scroll back to top button */
+#myBtn {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 1px;
+    outline: none;
+    background-color: #0ED2F7;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+/* scroll back to top button hover */
+#myBtn:hover {
+    background-color: #0ED2F1; /* Add a dark-grey background on hover */
+}
+
+/* Trigger Button */
+button.trigger {
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	z-index: 5000;
+	display: block;
+	margin-left: -0.5em;
+	padding: 0;
+	width: 1em;
+	height: 1em;
+	border: none;
+	background: transparent;
+	color: transparent;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.container:not(.notrans) button.trigger {
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.container.modify:not(.notrans) button.trigger {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+
+
+
+/* gradient keyframes */
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+#main {
+	background: linear-gradient(-45deg, #B2FEFA, #0ED2F7, #B2FEFA  );
+}
+
+
+
